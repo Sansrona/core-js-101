@@ -134,7 +134,7 @@ describe('09-functions-n-closures-tasks', () => {
     const actual = logger(['expected', 'test', 1], 0);
 
     assert.equal(isCalling, true, 'logger function should call the specified function');
-    assert.equal(actual, 'expected', 'logger function should return the original result from specified function');
+    assert.equal(actual, 'expected');
     assert.equal(
       log,
       'testLogger(["expected","test",1],0) starts\n'
